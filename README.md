@@ -282,3 +282,7 @@ A camera *on battery power* reports near ambient temperatures for it's temperatu
 6. You can't control the cameras without using the REST API directly. They are defaulted to always "armed" which means they will always send a motion notification. Video quality is defaulted to "subscription". Even if you DO control them, their state will be reset the next time they register with WiFi. Will have to build in storage of settings later.
 
 7. The camera streams have no authentication mechanism, and they are sent unencrypted over the wire. Use them only on a network you own and trust, as anybody could theoretically listen to the traffic and reconstruct the video by sniffing the packets.
+
+# Arm64
+
+I just need to the get workflow running...

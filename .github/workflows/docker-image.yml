@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+env:
+  REGISTRY_GHCR: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
 jobs:
   buildx:
     runs-on: ubuntu-latest

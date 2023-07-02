@@ -203,7 +203,7 @@ def get_snapshot(identifier):
         # after writing, cursor will be at last byte, so move it to start
         return_data.seek(0)
         # delete the file
-        os.remove(target_path)
+        # os.remove(target_path)
         # send it to client
         return send_file(return_data, mimetype='image/jpeg', attachment_filename=f'{identifier}.jpg')
 
